@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo App</title>
+
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
-    
+<body class="bg-[#f4f5f7] h-[100vh]  flex flex-col justify-center items-center">
+
+    <div class="h-[130px] w-[315px] bg-[url(./assets/bg.png)] flex justify-center items-center">
+        <img src="./assets/Group.png" alt="">
+    </div>
+    <form class="bg-white rounded-2xl p-10 w-[400px]">
+        <div>
+            <label class="font-medium">Mobile Number</label> <br>
+            <input id="mobile-number" type="text" placeholder="Enter Your Number" class="input bg-[#f4f5f7] mt-2 rounded-full" />
+        </div>
+        <div class="mt-7">
+            <label class="font-medium">4 Digit Pin</label> <br>
+            <input id="pin-number" type="text" placeholder="Enter 4 Digit Pin" class="input bg-[#f4f5f7] mt-2 rounded-full" />
+        </div>
+
+        <button id="login-btn" class="btn btn-primary bg-[#0874F2] border-0 mt-7 w-full rounded-full font-semibold text-[20px]">Login</button>
+    </form>
+
+
+
+    <!-- Script Conected -->
+
+    <script src="./index.js"></script>
 </body>
 </html>
